@@ -1,0 +1,10 @@
+[Unit]
+Description="jukepi service
+After=sshd.service
+
+[Service]
+ExecStart=/opt/jukepi/jukepi.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
